@@ -17,10 +17,25 @@ References:
 A sixteen decimal places' accurate Darcy friction factor database using non-linear Colebrook's equation with a million nodes: A way forward to the soft computing techniques
 https://www.sciencedirect.com/science/article/pii/S2352340919310881
 
-In order to speed up calculations, we can use AVX instructions. This is possible by using intrinsic numpy elementwise operations in python. To take advantage of multithreading, numba can be used. If you use simple for loops, then you are using SIMD operations. In fact, you can compare single-thread calculations of numpy if you have a new CPU (core i7 gen 3) and an old one (Core 2 Duo). All of the mid-range and above CPUs from AMD and Intel from 2012 onwards have this capability, either AVX with 128, 256 or 512 bit wide FP instructions. Generally CPUs have integer (arithmetic logic unit) and floating (floating point unit) calculation units (instructions). Taking advantage of FP transistors makes it faster for our application. 
+In order to speed up calculations, we can use AVX instructions. This is possible by using intrinsic numpy elementwise operations in python. To take advantage of multithreading, numba can be used. If you use simple for loops, then you are using SIMD operations. In fact, you can compare single-thread calculations of numpy if you have a new CPU (core i7 gen 3) and an old one (Core 2 Duo). All of the mid-range and above CPUs from AMD and Intel from 2012 onwards have this capability, either AVX with 128, 256 or 512 bit wide FP instructions. Generally CPUs have integer (arithmetic logic unit) and floating (floating point unit) calculation units (instructions). Taking advantage of FP transistors makes it faster for our application. 'numexpr' is another possibility in python but I haven't tested it yet. 
 
 If Intel C++ is used, then enabling multithreading & AVX (specific to CPU) can speed up the things to blitz speeds. Very very quick. 
 
 My GPU is very old (Nvidia 610m) and doesn't support CUDA I think. But I will probably be able to use OpenCL on it. It's a programming language. If I ever want to enter that, it's a huge time investment. 
 
 I have worked with longitudinal dispersion models for rivers but not for pipes. This can be a venue for soft computing calculations. 
+
+Papers to look at:
+- Efficient Resolution of the Colebrook Equation, Clammond
+- Optimization of water distribution networks, Samani
+- A gradient method for fuzzy analysis of water distribution networks, Moosavian
+
+
+Books to look at:
+- Design of water supply pipe networks, Swamee & Sharma
+
+Links to look at: 
+https://en.wikipedia.org/wiki/Darcy%E2%80%93Weisbach_equation
+https://en.wikipedia.org/wiki/Minor_losses_in_pipe_flow
+https://en.wikipedia.org/wiki/Darcy_friction_factor_formulae
+
