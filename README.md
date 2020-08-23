@@ -21,3 +21,5 @@ In order to speed up calculations, we can use AVX instructions. This is possible
 
 If Intel C++ is used, then enabling multithreading & AVX (specific to CPU) can speed up the things to blitz speeds. Very very quick. 
 
+My GPU is very old (Nvidia 610m) and doesn't support CUDA I think. But I will probably be able to use OpenCL on it. It's a programming language. If I ever want to enter that, it's a huge time investment. 
+
