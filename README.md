@@ -53,7 +53,9 @@ write an introduction to cuthill-mckee & minimum multiple-degree reordering. <br
 - this wikipedia link (RCM): https://en.wikipedia.org/wiki/Cuthill%E2%80%93McKee_algorithm  <br/>
 - RCM: https://fa.wikipedia.org/wiki/%D8%A7%D9%84%DA%AF%D9%88%D8%B1%DB%8C%D8%AA%D9%85_%DA%A9%D8%A7%D8%AA%D9%87%DB%8C%D9%84_%D9%85%DA%A9%DB%8C <br/>
 
-We can put a table for each formula and calculate the number of `log` calls & simple operators `+, *`. 
+We can put a table for each formula and calculate the number of `log` calls & simple operators `+, *`. The power operator in its direct form `x^c1` should be avoided if `c1` is an integer (sometimes the compiler understands it's an integer but better not to risk it). 
+
+Github markup: (to write grave accent use alt+numpad96, to write in italic use two asterists signs).
 
 For generating water distribution network (WDN) of cities, multiple options are available: 
 - use this paper by Robert Sitzenfrei from U of Innsbruke, Austria:  https://www.sciencedirect.com/science/article/pii/S1364815213001163
