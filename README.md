@@ -44,4 +44,8 @@ minor loss: https://en.wikipedia.org/wiki/Minor_losses_in_pipe_flow
 darcy friction factor & CW: https://en.wikipedia.org/wiki/Darcy_friction_factor_formulae
 
 
-write an introduction to cuthill-mckee & minimum 
+write an introduction to cuthill-mckee & minimum multiple-degree reordering. 
+Here is one link (matlab symamd by Tim Davis from UFL): https://de.mathworks.com/help/matlab/ref/symamd.html
+For reverse cuthill mckee, matlab website: https://de.mathworks.com/help/matlab/ref/symrcm.html 
+this wikipedia link (RCM): https://en.wikipedia.org/wiki/Cuthill%E2%80%93McKee_algorithm 
+RCM: https://fa.wikipedia.org/wiki/%D8%A7%D9%84%DA%AF%D9%88%D8%B1%DB%8C%D8%AA%D9%85_%DA%A9%D8%A7%D8%AA%D9%87%DB%8C%D9%84_%D9%85%DA%A9%DB%8C
