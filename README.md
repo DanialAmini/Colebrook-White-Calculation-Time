@@ -17,7 +17,7 @@ References:
 A sixteen decimal places' accurate Darcy friction factor database using non-linear Colebrook's equation with a million nodes: A way forward to the soft computing techniques
 https://www.sciencedirect.com/science/article/pii/S2352340919310881
 
-In order to speed up calculations, we can use AVX instructions. This is possible by using intrinsic numpy elementwise operations in python. To take advantage of multithreading, numba can be used. If you use simple for loops, then you are using SIMD operations. In fact, you can compare single-thread calculations of numpy if you have a new CPU (core i7 gen 3) and an old one (Core 2 Duo). All of the mid-range and above CPUs from AMD and Intel from 2012 onwards have this capability, either AVX with 128, 256 or 512 bit wide FP instructions. 
+In order to speed up calculations, we can use AVX instructions. This is possible by using intrinsic numpy elementwise operations in python. To take advantage of multithreading, numba can be used. If you use simple for loops, then you are using SIMD operations. In fact, you can compare single-thread calculations of numpy if you have a new CPU (core i7 gen 3) and an old one (Core 2 Duo). All of the mid-range and above CPUs from AMD and Intel from 2012 onwards have this capability, either AVX with 128, 256 or 512 bit wide FP instructions. Generally CPUs have integer (arithmetic logic unit) and floating (floating point unit) calculation units (instructions). Taking advantage of FP transistors makes it faster for our application. 
 
 If Intel C++ is used, then enabling multithreading & AVX (specific to CPU) can speed up the things to blitz speeds. Very very quick. 
 
