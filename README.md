@@ -23,3 +23,4 @@ If Intel C++ is used, then enabling multithreading & AVX (specific to CPU) can s
 
 My GPU is very old (Nvidia 610m) and doesn't support CUDA I think. But I will probably be able to use OpenCL on it. It's a programming language. If I ever want to enter that, it's a huge time investment. 
 
+I have worked with longitudinal dispersion models for rivers but not for pipes. This can be a venue for soft computing calculations. 
