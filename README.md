@@ -18,10 +18,12 @@ A sixteen decimal places' accurate Darcy friction factor database using non-line
 https://www.sciencedirect.com/science/article/pii/S2352340919310881
 
 In order to speed up calculations, we can use AVX instructions. This is possible by using intrinsic numpy elementwise operations in python. To take advantage of multithreading, numba can be used. If you use simple for loops, then you are using SIMD operations. In fact, you can compare single-thread calculations of numpy if you have a new CPU (core i7 gen 3) and an old one (Core 2 Duo). All of the mid-range and above CPUs from AMD and Intel from 2012 onwards have this capability, either AVX with 128, 256 or 512 bit wide FP instructions. Generally CPUs have integer (arithmetic logic unit) and floating (floating point unit) calculation units (instructions). Taking advantage of FP transistors makes it faster for our application. 
-about simd: https://en.wikipedia.org/wiki/SIMD,   it's implementations: https://en.wikipedia.org/wiki/SSE4 (ivy bridge & newer),   https://en.wikipedia.org/wiki/SSSE3 (sse3 for core 2 duo)
+about simd: https://en.wikipedia.org/wiki/SIMD <br/>
+it's implementations: https://en.wikipedia.org/wiki/SSE4 (ivy bridge & newer),<br/>
+https://en.wikipedia.org/wiki/SSSE3 (sse3 for core 2 duo)
 
 'numexpr' is another possibility in python but I haven't tested it yet. 
-Here is a link: https://towardsdatascience.com/speed-up-your-numpy-and-pandas-with-numexpr-package-25bd1ab0836b
+Here is a link: https://towardsdatascience.com/speed-up-your-numpy-and-pandas-with-numexpr-package-25bd1ab0836b <br/>
 
 If Intel C++ is used, then enabling multithreading & AVX (specific to CPU) can speed up the things to blitz speeds. Very very quick. 
 
@@ -39,13 +41,13 @@ Books to look at:
 - Design of water supply pipe networks, Swamee & Sharma
 
 Links to look at: 
-darcy weisbach: https://en.wikipedia.org/wiki/Darcy%E2%80%93Weisbach_equation
-minor loss: https://en.wikipedia.org/wiki/Minor_losses_in_pipe_flow
-darcy friction factor & CW: https://en.wikipedia.org/wiki/Darcy_friction_factor_formulae
+darcy weisbach: https://en.wikipedia.org/wiki/Darcy%E2%80%93Weisbach_equation <br/>
+minor loss: https://en.wikipedia.org/wiki/Minor_losses_in_pipe_flow <br/>
+darcy friction factor & CW: https://en.wikipedia.org/wiki/Darcy_friction_factor_formulae <br/>
 
 
 write an introduction to cuthill-mckee & minimum multiple-degree reordering. 
-Here is one link (matlab symamd by Tim Davis from UFL): https://de.mathworks.com/help/matlab/ref/symamd.html
-For reverse cuthill mckee, matlab website: https://de.mathworks.com/help/matlab/ref/symrcm.html 
-this wikipedia link (RCM): https://en.wikipedia.org/wiki/Cuthill%E2%80%93McKee_algorithm 
-RCM: https://fa.wikipedia.org/wiki/%D8%A7%D9%84%DA%AF%D9%88%D8%B1%DB%8C%D8%AA%D9%85_%DA%A9%D8%A7%D8%AA%D9%87%DB%8C%D9%84_%D9%85%DA%A9%DB%8C
+Here is one link (matlab symamd by Tim Davis from UFL): https://de.mathworks.com/help/matlab/ref/symamd.html <br/>
+For reverse cuthill mckee, matlab website: https://de.mathworks.com/help/matlab/ref/symrcm.html  <br/>
+this wikipedia link (RCM): https://en.wikipedia.org/wiki/Cuthill%E2%80%93McKee_algorithm  <br/>
+RCM: https://fa.wikipedia.org/wiki/%D8%A7%D9%84%DA%AF%D9%88%D8%B1%DB%8C%D8%AA%D9%85_%DA%A9%D8%A7%D8%AA%D9%87%DB%8C%D9%84_%D9%85%DA%A9%DB%8C <br/>
