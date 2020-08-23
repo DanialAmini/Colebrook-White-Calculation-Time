@@ -54,3 +54,11 @@ write an introduction to cuthill-mckee & minimum multiple-degree reordering. <br
 - RCM: https://fa.wikipedia.org/wiki/%D8%A7%D9%84%DA%AF%D9%88%D8%B1%DB%8C%D8%AA%D9%85_%DA%A9%D8%A7%D8%AA%D9%87%DB%8C%D9%84_%D9%85%DA%A9%DB%8C <br/>
 
 We can put a table for each formula and calculate the number of `log` calls & simple operators `+, *`. 
+
+For generating water distribution network (WDN) of cities, multiple options are available: 
+- use this paper by Robert Sitzenfrei from U of Innsbruke, Austria:  https://www.sciencedirect.com/science/article/pii/S1364815213001163
+- Use the Rome *.inp* file from this site (also by robert): https://www.uibk.ac.at/umwelttechnik/softwareanddatasets/index.html.en
+- use the DynaVIBe-Web from this link: https://web01-c815.uibk.ac.at/DynaVIBe-Web/projects/
+- Generate random graphs with WaterNetGen Epanet recompile program by portuguese 
+- use the database in Exeter university: http://emps.exeter.ac.uk/engineering/research/cws/ (there are many Iranian professors in the staff as well, make sure to check it). 
+- Generate graphs from various cities using OpenStreetMap initiative and the python package `OSMnx` from Geoff Boeing, USC
