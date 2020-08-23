@@ -52,3 +52,5 @@ write an introduction to cuthill-mckee & minimum multiple-degree reordering. <br
 - For reverse cuthill mckee, matlab website: https://de.mathworks.com/help/matlab/ref/symrcm.html  <br/>
 - this wikipedia link (RCM): https://en.wikipedia.org/wiki/Cuthill%E2%80%93McKee_algorithm  <br/>
 - RCM: https://fa.wikipedia.org/wiki/%D8%A7%D9%84%DA%AF%D9%88%D8%B1%DB%8C%D8%AA%D9%85_%DA%A9%D8%A7%D8%AA%D9%87%DB%8C%D9%84_%D9%85%DA%A9%DB%8C <br/>
+
+We can put a table for each formula and calculate the number of `log` calls & simple operators `+, *`. 
