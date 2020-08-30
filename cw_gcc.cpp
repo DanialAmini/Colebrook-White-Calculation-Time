@@ -1,4 +1,6 @@
 // g++ -Ofast -mavx -fopenmp cw.cpp  
+//  export OMP_NUM_THREADS=8
+
 // ./a.exe
 // cygwin
 // (OMP_NUM_THREADS not set) GNU (gcc, g++, gfortran)	-fopenmp
