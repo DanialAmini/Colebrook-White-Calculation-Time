@@ -1,5 +1,5 @@
 
-
+//intelc++, windows 10, core i7 3610 qm
 
 
 #include <iostream>
